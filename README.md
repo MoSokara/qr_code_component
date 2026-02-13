@@ -18,21 +18,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Author](#author)
   - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![screenshot](imgs/screenshot.png)
 
 ### Links
 
@@ -45,72 +35,142 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Through this project, I improved:
 
-To see how you can add code snippets, see below:
+- Writing clean and semantic HTML structure
+- Using Flexbox for centering layouts
+- Managing spacing and alignment properly
+- Improving attention to UI details
+- Understanding the importance of small design refinements
+
+Example of a clean structure I focused on:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR code component solution</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="imgs/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="component">
+      <img src="imgs/image-qr-code.png" alt="qr code image" />
+      <h1>Improve your front-end skills by building projects</h1>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+    </div>
+  </body>
+</html>
+
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(212, 45%, 89%);
+    height: 100vh;
+}
+
+.component {
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 15px;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In future projects, I want to focus more on:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Advanced CSS layouts
+- UI/UX design principles
+- Accessibility improvements
+- Building larger real-world projects
+- Mastering the MERN Stack
+
+My goal is to become a professional Full-Stack Developer.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- https://developer.mozilla.org/
+  - Helped me understand semantic HTML and CSS properties clearly.
+
+- https://css-tricks.com/
+  - Great resource for mastering Flexbox and layout techniques.
+
+- https://www.frontendmentor.io/
+  - Best platform for practicing real-world frontend challenges.
 
 ### AI Collaboration
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
+During this project, I used AI tools to:
 
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
+- Review and improve README structure
+- Refine project description wording
+- Improve documentation clarity
 
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+AI helped me organize my ideas better and present my work professionally.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Name - Mohamed Sokara
+- Website - [MoSokara.github.io](https://mosokara.github.io/my_portfolio_webside/)
+- Frontend Mentor - [@MoSokara](https://www.frontendmentor.io/profile/MoSokara)
+- Twitter - [@Mo_Sokara](https://x.com/Mo_Sokara)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- GitHub - [@MoSokara](https://github.com/MoSokara)
+
+- LinkedIn: [@mosokara](https://www.linkedin.com/in/mosokara)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I want to give a special thanks to **Frontend Mentor** for providing this challenge and helping me improve my front-end skills.  
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I also want to acknowledge the inspiration I got from studying other developers’ solutions and learning from their approaches.  
+
+A big thank you to **myself** for staying consistent, practicing every day, and always aiming to improve my coding and design skills.  
+
+Finally, gratitude to my family and friends for their support while I focus on learning and building projects.
